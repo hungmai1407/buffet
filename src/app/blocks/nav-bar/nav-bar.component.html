@@ -1,0 +1,9 @@
+<nav class="nav-bar">
+  <ul>
+    <li class="my-2" *ngFor="let item of navItem">
+      <a [routerLink]="item.routerLink" routerLinkActive="active">
+        {{ item.label | uppercase }}
+      </a>
+    </li>
+  </ul>
+</nav>
