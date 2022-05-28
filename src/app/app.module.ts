@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { TodoAppComponent } from './pages/todo-app/todo-app.component';
 import { MusicAppComponent } from './pages/music-app/music-app.component';
 import { NavBarComponent } from './blocks/nav-bar/nav-bar.component';
+import { HomeComponent } from './blocks/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TodoAppComponent,
     MusicAppComponent,
-    NavBarComponent
+    NavBarComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

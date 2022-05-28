@@ -9,8 +9,9 @@ export class NavBarComponent implements OnInit {
   constructor() {}
 
   navItem = [
-    { routerLink: '/todo-app', label: 'todo list' },
+    { routerLink: '', label: 'Home' },
     { routerLink: '/music-app', label: 'music' },
+    { routerLink: '/todo-app', label: 'todo list' },
   ];
 
   ngOnInit(): void {}
