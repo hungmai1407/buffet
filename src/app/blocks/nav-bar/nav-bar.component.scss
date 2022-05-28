@@ -1,10 +1,20 @@
 .nav-bar {
-  background-color: #99bbc1;
   height: 100vh;
-  min-width: 14vh;
-  max-width: 20vh;
+  min-width: 110px;
   padding: 7px;
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
+}
+
+.nav-item {
+  width: 100%;
+  transition: 0.15s;
+  transition-timing-function: ease-in-out;
+  &:hover {
+    @apply px-1;
+    color: #4285fd;
+    font-weight: 500;
+    box-shadow: -3px 0px 0px 0px #4682ff;
+  }
 }
