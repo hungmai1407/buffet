@@ -1,0 +1,32 @@
+<div class="h-full w-full pr-2 play-item-container">
+  <h1 class="high-index title">{{ title }}</h1>
+  <div id="play-animation" class="high-index"></div>
+  <div class="footer high-index">
+    <div class="content-center flex justify-between items-center">
+      <span class="time opacity-80"> 00:00 </span>
+      <mat-progress-bar
+        mode="determinate"
+        class="mx-3"
+        color="warn"
+        value="10"
+      ></mat-progress-bar>
+      <span class="time"> 03:00 </span>
+    </div>
+    <div class="flex footer-action">
+      <button mat-icon-button aria-label="Prev">
+        <mat-icon>skip_previous</mat-icon>
+      </button>
+      <button
+        (click)="onPlayAndPause()"
+        mat-icon-button
+        aria-label="Play / Pause"
+        class="center-action"
+      >
+        <mat-icon>{{ !isPlay ? "play_arrow" : "pause" }}</mat-icon>
+      </button>
+      <button mat-icon-button aria-label="Next">
+        <mat-icon>skip_next</mat-icon>
+      </button>
+    </div>
+  </div>
+</div>

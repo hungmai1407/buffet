@@ -3,7 +3,16 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-body {
-  font-family: monospace;
+body,
+html {
+  margin: 0;
+  font-family: monospace !important;
+  height: 100%;
   font-size: larger;
+  box-sizing: border-box;
+}
+
+.note {
+  font-size: 12px;
+  color: #0000007a;
 }

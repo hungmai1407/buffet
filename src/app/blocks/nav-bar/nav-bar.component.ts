@@ -9,7 +9,7 @@ export class NavBarComponent implements OnInit {
   constructor() {}
 
   navItem = [
-    { routerLink: '', label: 'Home' },
+    { routerLink: '', label: 'Dash board' },
     { routerLink: '/music-app', label: 'music' },
     { routerLink: '/todo-app', label: 'todo list' },
   ];

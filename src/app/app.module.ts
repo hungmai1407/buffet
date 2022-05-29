@@ -7,6 +7,14 @@ import { TodoAppComponent } from './pages/todo-app/todo-app.component';
 import { MusicAppComponent } from './pages/music-app/music-app.component';
 import { NavBarComponent } from './blocks/nav-bar/nav-bar.component';
 import { HomeComponent } from './blocks/home/home.component';
+import { ListItemComponent } from './pages/music-app/component/list-item/list-item.component';
+import { PlayItemComponent } from './pages/music-app/component/play-item/play-item.component';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -14,13 +22,21 @@ import { HomeComponent } from './blocks/home/home.component';
     TodoAppComponent,
     MusicAppComponent,
     NavBarComponent,
-    HomeComponent
+    HomeComponent,
+    ListItemComponent,
+    PlayItemComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatProgressBarModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatIconModule,
+    MatFormFieldModule,
+    MatInputModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

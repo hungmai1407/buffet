@@ -1,7 +1,12 @@
 <nav class="nav-bar">
   <ul class="w-full">
-    <li class="my-2 w-full nav-item" *ngFor="let item of navItem">
-      <a [routerLink]="item.routerLink" routerLinkActive="active">
+    <li
+      class="my-2 w-full cursor-pointer nav-item"
+      *ngFor="let item of navItem"
+      [routerLink]="item.routerLink"
+      routerLinkActive="active"
+    >
+      <a>
         {{ item.label | uppercase }}
       </a>
     </li>
