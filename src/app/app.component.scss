@@ -4,3 +4,22 @@
   max-width: 100% !important;
   overflow: hidden;
 }
+
+@keyframes auto-rotateY {
+  100% {
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+.icon-error {
+  -webkit-animation: auto-rotateY 3s infinite;
+  -moz-animation: auto-rotateY 3s infinite;
+  -ms-animation: auto-rotateY 3s infinite;
+  animation: auto-rotateY 3s infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  animation-timing-function: linear;
+}

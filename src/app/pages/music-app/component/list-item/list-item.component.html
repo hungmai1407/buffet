@@ -2,7 +2,7 @@
   <form>
     <mat-form-field class="w-full" appearance="outline">
       <mat-label> <mat-icon>music_note</mat-icon>Search</mat-label>
-      <input matInput />
+      <input (keypress)="onKeywordChange($event)" matInput />
     </mat-form-field>
   </form>
   <div class="result w-full">

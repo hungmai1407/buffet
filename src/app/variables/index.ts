@@ -11,3 +11,5 @@ export const COLOR_SELECTOR_HOVER = {
   [SELECTOR.WINTER]: 'pink',
   [SELECTOR.SPRING]: 'green',
 };
+
+export const ENTER_KEYCODE = 13;
